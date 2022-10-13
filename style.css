@@ -3,5 +3,41 @@
 :root {
     --font-family: 'Oswald', sans-serif;
     --bg-color: #06283D;
-    --primary-color: #47B5FF;
+    --primary-color: #DFF6FF;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
 }
