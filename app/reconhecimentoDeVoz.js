@@ -9,8 +9,10 @@ recognition.start();
 recognition.addEventListener('result', onSpeak);
 
 function onSpeak(event) {
-    chute = event.results[0][0].transcript;
-    exibirChute(chute)
+    let chute = event.results[0][0].transcript;
+    console.log(event);
+    exibirChute(chute);
+    verificaValorValido(chute);
 }
 
 function exibirChute(chute) {
